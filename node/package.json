@@ -1,0 +1,30 @@
+{
+  "name": "sqlsocket",
+  "version": "1.0.0",
+  "description": "A microservice for sql over a websocket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arielr52/sqlsocket.git"
+  },
+  "keywords": [
+    "websocket",
+    "sql"
+  ],
+  "author": ["ariel","vbitla"],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arielr52/sqlsocket/issues"
+  },
+  "homepage": "https://github.com/arielr52/sqlsocket",
+  "dependencies": {
+    "boom": "^2.7.1",
+    "hapi": "^8.4.0",
+    "joi": "^6.4.1",
+    "knex": "^0.8.3",
+    "pg": "^4.3.0"
+  }
+}
