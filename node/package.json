@@ -14,7 +14,10 @@
     "websocket",
     "sql"
   ],
-  "author": ["ariel","vbitla"],
+  "author": [
+    "ariel",
+    "vbitla"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/arielr52/sqlsocket/issues"
@@ -25,6 +28,7 @@
     "hapi": "^8.4.0",
     "joi": "^6.4.1",
     "knex": "^0.8.3",
-    "pg": "^4.3.0"
+    "pg": "^4.3.0",
+    "socket.io": "^1.3.5"
   }
 }

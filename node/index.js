@@ -1,7 +1,8 @@
-var Hapi = require('hapi');
+var Hapi    = require('hapi');
+var server  = new Hapi.Server();
 
-var server = new Hapi.Server();
 server.connection({ port: 3000 });
+var io = require('socket.io')(server.listener);
 
 server.route({
     method: 'GET',
@@ -17,6 +18,13 @@ server.route({
     handler: function (request, reply) {
         reply('Hello, ' + encodeURIComponent(request.params.name) + '!');
     }
+});
+
+io.on("connection", function(socket) {
+    socket.emit("Connected");
+    socket.on('burp', function(){
+        socket.emit('Excuse you!');
+    });
 });
 
 server.start(function () {
