@@ -1,7 +1,12 @@
 var Hapi    = require('hapi');
 var server  = new Hapi.Server();
+var config  = require('./config/config');
 
-server.connection({ port: 3000 });
+server.connection({ 
+    host: config.server.host, 
+    port: config.server.port,
+});
+
 var io = require('socket.io')(server.listener);
 
 server.route({
