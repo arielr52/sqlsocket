@@ -15,7 +15,7 @@
 		<jetty.version>9.2.4.v20141103</jetty.version>
 		<dropwizard-webjars.version>0.2.1</dropwizard-webjars.version>
 		<jquery.version>2.1.1</jquery.version>
-		<junit.version>4.12</junit.version>
+		<junit.version>4.13.1</junit.version>
 	</properties>
 
 	<dependencies>
